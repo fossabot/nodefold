@@ -2,6 +2,9 @@
 	"name": "nodefold",
 	"version": "1.0.0",
 	"description": "A Tool For Scaffolding Node Modules",
+	"scripts": {
+		"lint": "xo --fix"
+	},
 	"author": {
 		"name": "Samarth Verma",
 		"email": "samarthverma0302@yahoo.com"
@@ -14,5 +17,18 @@
 		"email": "samarthverma0302@yahoo.com",
 		"url": "https://github.com/clemtrek/nodefold/issues"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"rules": {
+			"require-jsdoc": [
+				"error"
+			],
+			"valid-jsdoc": [
+				"error"
+			]
+		}
+	}
 }
