@@ -3,7 +3,11 @@
 	"version": "1.0.0",
 	"description": "A Tool For Scaffolding Node Modules",
 	"scripts": {
-		"lint": "xo --fix"
+		"lint": "xo --fix",
+		"test": "ava --verbose"
+	},
+	"directories": {
+		"test": "test"
 	},
 	"author": {
 		"name": "Samarth Verma",
@@ -20,8 +24,16 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@ava/babel-preset-stage-4": "^1.1.0",
+		"ava": "^0.22.0",
 		"babel-preset-env": "^1.6.0",
+		"babel-register": "^6.26.0",
 		"xo": "^0.18.2"
+	},
+	"ava": {
+		"babel": "inherit",
+		"require": [
+			"babel-register"
+		]
 	},
 	"xo": {
 		"rules": {
