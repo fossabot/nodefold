@@ -3,10 +3,17 @@
 	"version": "1.0.0",
 	"description": "A Tool For Scaffolding Node Modules",
 	"scripts": {
+		"build": "rimraf bin | babel src -d bin",
 		"lint": "xo --fix",
+		"prestart": "rimraf bin",
+		"start": "babel -w src -d bin",
 		"test": "ava --verbose"
 	},
+	"bin": {
+		"nodefold": "bin/main.js"
+	},
 	"directories": {
+		"bin": "bin",
 		"test": "test"
 	},
 	"author": {
@@ -29,8 +36,10 @@
 	"devDependencies": {
 		"@ava/babel-preset-stage-4": "^1.1.0",
 		"ava": "^0.22.0",
+		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.6.0",
 		"babel-register": "^6.26.0",
+		"rimraf": "^2.6.2",
 		"xo": "^0.18.2"
 	},
 	"ava": {
