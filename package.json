@@ -2,6 +2,15 @@
 	"name": "nodefold",
 	"version": "1.0.0",
 	"description": "A Tool For Scaffolding Node Modules",
+	"keywords": [
+		"boilerplate",
+		"generator",
+		"modules",
+		"node",
+		"node_module",
+		"scaffold",
+		"template"
+	],
 	"scripts": {
 		"build": "rimraf bin | babel src -d bin",
 		"lint": "xo --fix",
