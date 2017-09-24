@@ -14,6 +14,8 @@
 	"scripts": {
 		"build": "rimraf bin | babel src -d bin",
 		"lint": "xo --fix",
+		"preinstall": "rimraf bin",
+		"postinstall": "babel src -d bin",
 		"prestart": "rimraf bin",
 		"start": "babel -w src -d bin",
 		"test": "ava --verbose"
