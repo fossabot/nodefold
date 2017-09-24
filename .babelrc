@@ -1,0 +1,7 @@
+{
+	"presets": [
+		"env",
+		"@ava/stage-4"
+	],
+	"comments": false
+}
