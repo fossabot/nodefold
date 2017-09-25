@@ -48,6 +48,7 @@
 		"@ava/babel-preset-stage-4": "^1.1.0",
 		"ava": "^0.22.0",
 		"babel-cli": "^6.26.0",
+		"babel-polyfill": "^6.26.0",
 		"babel-preset-env": "^1.6.0",
 		"babel-register": "^6.26.0",
 		"rimraf": "^2.6.2",
@@ -56,7 +57,8 @@
 	"ava": {
 		"babel": "inherit",
 		"require": [
-			"babel-register"
+			"babel-register",
+			"babel-polyfill"
 		]
 	},
 	"xo": {
