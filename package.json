@@ -42,7 +42,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"caporal": "^0.7.0",
-		"inquirer": "^3.3.0"
+		"inquirer": "^3.3.0",
+		"npm-conf": "^1.1.2"
 	},
 	"devDependencies": {
 		"@ava/babel-preset-stage-4": "^1.1.0",
