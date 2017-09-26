@@ -42,6 +42,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"caporal": "^0.7.0",
+		"git-config": "^0.0.7",
 		"github-username": "^4.1.0",
 		"inquirer": "^3.3.0",
 		"npm-conf": "^1.1.2"
