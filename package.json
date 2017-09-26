@@ -45,6 +45,7 @@
 		"git-config": "^0.0.7",
 		"github-username": "^4.1.0",
 		"inquirer": "^3.3.0",
+		"lodash": "^4.17.4",
 		"npm-conf": "^1.1.2"
 	},
 	"devDependencies": {
