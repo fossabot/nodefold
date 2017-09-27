@@ -46,7 +46,9 @@
 		"github-username": "^4.1.0",
 		"inquirer": "^3.3.0",
 		"lodash": "^4.17.4",
-		"npm-conf": "^1.1.2"
+		"normalize-url": "^1.9.1",
+		"npm-conf": "^1.1.2",
+		"validator": "^8.2.0"
 	},
 	"devDependencies": {
 		"@ava/babel-preset-stage-4": "^1.1.0",
