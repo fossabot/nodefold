@@ -1,7 +1,11 @@
 {
 	"presets": [
 		"env",
-		"@ava/stage-4"
+		"@ava/stage-4",
+		"minify"
+	],
+	"plugins": [
+		"lodash"
 	],
 	"comments": false
 }
