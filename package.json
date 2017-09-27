@@ -14,11 +14,10 @@
 	"scripts": {
 		"build": "rimraf bin | babel src -d bin",
 		"lint": "xo --fix",
-		"preinstall": "rimraf bin",
-		"postinstall": "babel src -d bin",
-		"prestart": "rimraf bin",
+		"postinstall": "rimraf bin | babel src -d bin",
 		"start": "babel -w src -d bin",
-		"test": "ava --verbose"
+		"test": "nyc ava --verbose",
+		"posttest": "nyc report --reporter=lcov > coverage.lcov && codecov"
 	},
 	"bin": {
 		"nodefold": "bin/main.js"
@@ -59,6 +58,8 @@
 		"babel-preset-env": "^1.6.0",
 		"babel-preset-minify": "^0.2.0",
 		"babel-register": "^6.26.0",
+		"codecov": "^2.3.0",
+		"nyc": "^11.1.0",
 		"rimraf": "^2.6.2",
 		"xo": "^0.18.2"
 	},
