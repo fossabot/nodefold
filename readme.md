@@ -8,6 +8,9 @@
 
 
 
+[![Build Status](https://travis-ci.org/clemtrek/nodefold.svg?branch=master)](https://travis-ci.org/clemtrek/nodefold)
+[![Code Coverage](https://codecov.io/gh/clemtrek/nodefold/branch/master/graph/badge.svg)](https://codecov.io/gh/clemtrek/nodefold)
+[![Dependency Management](https://david-dm.org/clemtrek/nodefold.svg)](https://david-dm.org/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 Nodefold provides an elegant & simple command line interface to easily scaffold out new node modules. No need to repeat the scaffolding process again & again.
@@ -19,10 +22,10 @@ Nodefold provides an elegant & simple command line interface to easily scaffold 
 
 # Install
 ```
-npm install --global nodefold
+$ npm install --global nodefold
 ```
 <div align="center">or</div> <br>
 
 ```
-yarn global add nodefold
+$ yarn global add nodefold
 ```
