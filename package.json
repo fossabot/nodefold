@@ -16,8 +16,8 @@
 		"lint": "xo --fix",
 		"postinstall": "rimraf bin | babel src -d bin",
 		"start": "babel -w src -d bin",
-		"test": "nyc ava --verbose",
-		"posttest": "nyc report --reporter=lcov > coverage.lcov && codecov"
+		"test": " nyc ava",
+		"posttest": "nyc report --reporter=text-lcov > codecov.lcov | codecov"
 	},
 	"bin": {
 		"nodefold": "bin/main.js"
@@ -59,7 +59,7 @@
 		"babel-preset-minify": "^0.2.0",
 		"babel-register": "^6.26.0",
 		"codecov": "^2.3.0",
-		"nyc": "^11.1.0",
+		"nyc": "^11.2.1",
 		"rimraf": "^2.6.2",
 		"xo": "^0.18.2"
 	},
